@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>1st Quarter Exam</title>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js"></script>
+</head>
+<body>
+  <h1>1st Quarter Exam</h1>
+  <form id="examForm">
+    <label>Student Name:</label><br>
+    <input type="text" id="studentName" required><br><br>
+
+    <!-- Question 1 -->
+    <p>1. Ano ang pangunahing layunin ng sulating teknikal?</p>
+    <input type="radio" name="q1" value="a"> a. Magpahayag ng damdamin<br>
+    <input type="radio" name="q1" value="b"> b. Magpaliwanag ng teknikal na proseso<br>
+    <input type="radio" name="q1" value="c"> c. Manghikayat ng mambabasa<br>
+    <input type="radio" name="q1" value="d"> d. Magkuwento ng karanasan<br><br>
+
+
+<!-- Question 2 -->
+    <p>2. Alin sa mga sumusunod ang halimbawa ng sulating bokasyunal?</p>
+    <input type="radio" name="q2" value="a"> a. Feasibility Study<br>
+    <input type="radio" name="q2" value="b"> b. Resume<br>
+    <input type="radio" name="q2" value="c"> c. User Manual<br>
+    <input type="radio" name="q" value="d"> d. Scientific Paper<br><br>
+
+
+<!-- Question 3 -->
+    <p>3. Ang sulating teknikal ay karaniwang ginagamit sa larangan ng:</p>
+    <input type="radio" name="q3" value="a"> a. Panitikan<br>
+    <input type="radio" name="q3" value="b"> b. Agham at teknolohiya<br>
+    <input type="radio" name="q3" value="c"> c. Musika<br>
+    <input type="radio" name="q3" value="d"> d. Edukasyong Pisikal<br><br>
+
+    
+<!-- Question 4 -->
+    <p>4. Alin sa mga sumusunod ang katangian ng sulating bokasyunal?</p>
+    <input type="radio" name="q4" value="a"> a. Panitikan<br>
+    <input type="radio" name="q4" value="b"> b. Agham at teknolohiya<br>
+    <input type="radio" name="q4" value="c"> c. Musika<br>
+    <input type="radio" name="q4" value="d"> d. Edukasyong Pisikal<br><br>
+
+
+<!-- Question 5 -->
+    <p>5. Ano ang layunin ng isang application letter?</p>
+    <input type="radio" name="q5" value="a"> a. Mag-ulat ng eksperimento<br>
+    <input type="radio" name="q5" value="b"> b. Humiling ng posisyon sa trabaho<br>
+    <input type="radio" name="q5" value="c"> c. Magpaliwanag ng proseso<br>
+    <input type="radio" name="q5" value="d"> d. Magbigay ng rekomendasyon<br><br>
+
+
+<!-- Question 6 -->
+    <p>6. Alin sa mga sumusunod ang ginagamit upang ilarawan ang produkto o kagamitan?</p>
+    <input type="radio" name="q6" value="a"> a. Resume<br>
+    <input type="radio" name="q6" value="b"> b. Product Specification Sheet<br>
+    <input type="radio" name="q6" value="c"> c. Training Logbook<br>
+    <input type="radio" name="q6" value="d"> d. Application Letter<br><br>
+
+
+<!-- Question 7 -->
+    	<p>7. Ano ang tawag sa dokumentong naglalaman ng tala ng mga gawain sa OJT?</p>
+  	<input type="radio" name="q7" value="a"> a. Feasibility Study<br>
+ 	<input type="radio" name="q7" value="a"> b. Curriculum Vitae<br>
+	<input type="radio" name="q7" value="a"> c. Training Logbook<br>
+ 	<input type="radio" name="q7" value="a"> d. Memor<br><br>
+
+        
+<!-- Question 8 -->
+   	<p>8. Alin sa mga sumusunod ang ginagamit sa pagsusuri kung posible ang isang proyekto?</p>
+  	<input type="radio" name="q8" value="a"> a. Incident Report<br>
+	<input type="radio" name="q8" value="b"> b. Feasibility Study<br>
+	<input type="radio" name="q8" value="c"> c. Resume<br> 	
+	<input type="radio" name="q8" value="d"> d. Complaint Letter<br><br>
+
+        
+<!-- Question 9 -->
+    	<p>9. Ang sulating teknikal ay kadalasang may:</p>
+  	<input type="radio" name="q9" value="a"> a. Balangkas ng nobela<br> 			
+	<input type="radio" name="q9" value="b"> b. Diagrams, graphs, at step-by-step na proseso<br> 
+	<input type="radio" name="q9" value="c"> c. Talambuhay ng manunulat<br> 		
+	<input type="radio" name="q9" value="d"> d. Tula at awit<br><br>
+
+
+<!-- Question 10 -->
+    	<p>10. Alin sa mga sumusunod ang ginagamit upang ipahayag ang reklamo sa serbisyo?</p>
+  	<input type="radio" name="q10" value="a"> a. Request Letter<br> 	
+	<input type="radio" name="q10" value="b"> b. Complaint Letter<br> 		
+	<input type="radio" name="q10" value="c"> c. Endorsement Letter<br> 		
+	<input type="radio" name="q10" value="d"> d. Memo<br><br>
+
+
+<!-- Question 11 -->
+   	<p>11. Ano ang tawag sa varayti ng wika batay sa rehiyon o lugar?</p>
+  	<input type="radio" name="q11" value="a"> a. Sosyolek<br> 	
+	<input type="radio" name="q11" value="b"> b. Dayalek<br> 	
+	<input type="radio" name="q11" value="c"> c. Idyolek<br> 	
+	<input type="radio" name="q11" value="d"> d. Rehistro<br><br>
+
+
+<!-- Question 12 -->
+    	<p>12. Ang “Jejemon” ay isang halimbawa ng:</p>
+  	<input type="radio" name="q12" value="a"> a. Dayalek<br>	 
+	<input type="radio" name="q12" value="b"> b. Etnolek<br> 	
+	<input type="radio" name="q12" value="c"> c. Sosyolek<br> 	
+	<input type="radio" name="q12" value="d"> d. Rehistro<br><br>
+
+
+<!-- Question 13 -->
+   	<p>13. Ang rehistro ng wika ay kadalasang ginagamit sa:</p>
+  	<input type="radio" name="q13" value="a"> a. Paglalaro<br> 	
+	<input type="radio" name="q13" value="b"> b. Espesipikong propesyon o gawain<br> 	
+	<input type="radio" name="q13" value="c"> c. Paglalakbay<br> 		
+	<input type="radio" name="q13" value="d"> d. Pagkanta<br><br>
+
+ 	
+<!-- Question 14-->
+    	<p>14. Ano ang tawag sa personal na estilo ng pagsasalita ng isang tao?</p>
+  	<input type="radio" name="q14" value="a"> a. Idyolek<br> 	
+	<input type="radio" name="q14" value="b"> b. Sosyolek<br> 	
+	<input type="radio" name="q14" value="c"> c. Dayalek<br> 	
+	<input type="radio" name="q14" value="d"> d. Rehistro<br><br>
+
+
+
+<!-- Question 15-->
+  	<p>15 . Sa konteksto ng pagluluto, ang rehistro ng wika ay karaniwang nasa:</p>
+  	<input type="radio" name="q15" value="a"> a. Pabula<br> 	
+	<input type="radio" name="q15" value="b"> b. Imperatibong anyo<br> 		
+	<input type="radio" name="q15" value="c"> c. Pananaw ng tagapagsalaysay<br> 		
+	<input type="radio" name="q15" value="a"> d. Balagtasan<br><br>
+ 
+
+<!-- Question 16-->
+   	<p>16 . Ikaw ay isang engineer na gumagawa ng feasibility study para sa isang bagong proyekto. Alin sa mga sumusunod ang dapat mong isulat upang ipakita kung posible ang plano?</p>
+  	<input type="radio" name="q16" value="a"> a. resume<br>		
+	<input type="radio" name="q16" value="b"> b. feasibility study<br> 		
+	<input type="radio" name="q16" value="c"> c. application letter<br> 		
+	<input type="radio" name="q16" value="d"> d. training logbook<br><br> 
+ 
+
+<!-- Question 17-->
+    	<p>17. Ikaw ay isang estudyante sa TESDA na gumagawa ng tala ng iyong mga gawain sa training. Anong dokumento ang dapat mong gamitin?</p>
+	<input type="radio" name="q17" value="a"> a. user manual<br> 	
+	<input type="radio" name="q17" value="b"> b. training logbook<br> 	
+	<input type="radio" name="q17" value="c"> c. incident report<br> 	
+	<input type="radio" name="q17" value="d"> d. memo<br><br>
+
+
+<!-- Question 18-->
+	<p>18. Ang iyong supervisor ay humiling ng ulat tungkol sa progreso ng proyekto sa opisina. Alin sa mga sumusunod ang angkop na sulatin para dito?</p> 
+	<input type="radio" name="q18" value="a"> a. progress report<br> 		
+	<input type="radio" name="q18" value="b"> b. resume<br> 		
+	<input type="radio" name="q18" value="c"> c. complaint letter<br> 		
+	<input type="radio" name="q18" value="d"> d. endorsement letter<br><br>
+
+
+<!-- Question 19-->
+	<p>19. Ikaw ay nag-aaplay para sa isang posisyon sa isang kumpanya. Alin sa mga sumusunod ang dapat mong isulat upang maipakita ang iyong mga kakayahan at karanasan?</p>
+	<input type="radio" name="q19" value="a"> a. technical proposal<br> 		
+	<input type="radio" name="q19" value="b"> b. resume<br> 		
+	<input type="radio" name="q19" value="c"> c. incident report<br> 		
+	<input type="radio" name="q19" value="d"> d. maintenance manual<br><br>
+
+
+<!-- Question 20-->
+	<p>20. Ang isang technician ay nagbigay ng dokumento na naglalaman ng mga tagubilin kung paano gamitin ang isang bagong makina. Anong uri ng sulatin ito?</p> 
+	<input type="radio" name="q20" value="a"> a. user man<br>		 
+	<input type="radio" name="q20" value="b"> b. application letter<br> 	
+	<input type="radio" name="q20" value="c"> c. feasibility study<br> 
+	<input type="radio" name="q20" value="d"> d. training logbook<br><br>
+
+
+<!-- Question 21-->
+	<p>21. Ikaw ay isang fresh graduate na naghahanap ng trabaho sa isang kumpanya ng recruitment na kilala sa pagkuha ng mga bagong empleyado para sa iba't ibang industriya. Upang maipakita 	ang iyong mga kakayahan, karanasan, at educational background, kailangan mong magsumite ng isang dokumento na naglalaman ng detalyadong impormasyon tungkol sa iyong sarili. Ang dokumentong 	ito ay magsisilbing basehan ng HR personnel sa pag-evaluate ng iyong aplikasyon. Alin sa mga sumusunod ang dapat mong isulat?</p> 
+	<input type="radio" name="q21" value="a"> a. resume<br> 	
+	<input type="radio" name="q21" value="b"> b. application letter<b> 	
+	<input type="radio" name="q21" value="c"> c. character reference letter<br> 	
+	<input type="radio" name="q21" value="d"> d. clearance form<br><br>
+
+
+<!-- Question 22-->
+	<p>22. Ano ang tawag sa dokumentong naglalaman ng tala ng mga aksidente o insidente sa trabaho?</p> 
+	<input type="radio" name="q22" value="a"> a. Incident Report<br> 	
+	<input type="radio" name="q22" value="b"> b. Feasibility Study<br> 	
+	<input type="radio" name="q22" value="c"> c. Training Logbook<br> 	
+	<input type="radio" name="q22" value="d"> d. Complaint Letter<br><br>
+
+
+<!-- Question 23-->
+	<p>23. Alin sa mga sumusunod ang ginagamit upang magbigay ng gabay sa paggamit ng makina o software?</p>
+	<input type="radio" name="q23" value="a"> a. User Manual<br> 		
+	<input type="radio" name="q23" value="b"> b. Resume<br> 		
+	<input type="radio" name="q23" value="c"> c. Application Letter<br> 		
+	<input type="radio" name="q23" value="d"> d. Training Logbook<br><br>
+
+	
+<!-- Question 24-->
+	<p>24. Ano ang tawag sa sulating naglalaman ng detalyadong impormasyon tungkol sa isang produkto?</p>
+	<input type="radio" name="q24" value="a"> a. Product Specification Sheet<br>	 
+	<input type="radio" name="q24" value="b"> b. Resume<br>	 
+	<input type="radio" name="q24" value="c"> c. Complaint Letter<br> 
+	<input type="radio" name="q24" value="d"> d. Memo<br><br>
+	
+
+<!-- Question 25-->
+	<p>25. Ikaw ay isang engineer na nagtatrabaho sa isang kumpanya na gumagawa ng mga proyekto para sa urban development. Inatasan ka ng iyong team leader na magsagawa ng pagsusuri kung 	posible bang magtayo ng isang bagong tulay sa isang lugar na madalas bahain. Kailangan mong gumawa ng isang dokumento na maglalaman ng mga datos, pagsusuri, at rekomendasyon upang ipakita 	kung ang plano ay praktikal at maaaring maisakatuparan. Anong uri ng sulating teknikal ang dapat mong gamitin?</p>
+	<input type="radio" name="q25" value="a"> a. feasibility study<br> 	
+	<input type="radio" name="q25" value="b"> b. project proposal<br> 	
+	<input type="radio" name="q25" value="c"> c. technical report<br> 	
+	<input type="radio" name="q25" value="d"> d. progress report<br><br>
+
+
+<!-- Question 26-->
+	<p>26. Ano ang tawag sa varayti ng wika batay sa grupo o antas ng lipunan?</p>
+	<input type="radio" name="q26" value="a"> a. Sosyolek<br> 		
+	<input type="radio" name="q26" value="b"> b. Dayalek<br> 		
+	<input type="radio" name="q26" value="c"> c. Idyolek<br> 		
+	<input type="radio" name="q26" value="d"> d. Rehistro<br><br>
+
+
+<!-- Question 27-->
+	<p>27. Ang “Gay Lingo” ay isang halimbawa ng:</p>
+	<input type="radio" name="q27" value="a"> a. Dayalek<br> 		
+	<input type="radio" name="q27" value="b"> b. Sosyolek<br> 		
+	<input type="radio" name="q27" value="c"> c. Etnolek<br>		 
+	<input type="radio" name="q27" value="d"> d. Idyolek<br><br>
+
+
+<!-- Question 28-->
+	<p>28. Ano ang tawag sa wika ng isang etnikong grupo?</p> 
+	<input type="radio" name="q28" value="a"> a. Sosyolek<br> 		
+	<input type="radio" name="q28" value="b"> b. Dayalek<br> 		
+	<input type="radio" name="q28" value="c"> c. Etnolek<br> 		
+	<input type="radio" name="q28" value="d"> d. Idyolek<br><br>
+
+
+<!-- Question 29-->
+	<p>29. Ang rehistro ng wika ay kadalasang ginagamit sa:</p>
+	<input type="radio" name="q29" value="a"> a. Espesipikong propesyon o gawain<br>
+	<input type="radio" name="q29" value="b"> b. Paglalakbay<br> 		
+	<input type="radio" name="q29" value="c"> c. Pagkanta<br> 		
+	<input type="radio" name="q29" value="d"> d. Paglalaro<br><br>
+
+
+<!-- Question 30-->
+	<p>30. Ano ang tawag sa varayti ng wika na walang pormal na estruktura?</p> 
+	<input type="radio" name="q30" value="a"> a. Creole<br> 		
+	<input type="radio" name="q30" value="b"> b. Pidgin<br> 		
+	<input type="radio" name="q30" value="c"> c. Sosyolek<br> 		
+	<input type="radio" name="q30" value="d"> d. Dayalek<br><br>
+
+
+<!-- Question 31-->
+	<p>31. Ikaw ay isang technician na nagtatrabaho sa isang malaking manufacturing company na gumagawa ng mga makina para sa industriya. Napansin mo na ang ilang makina ay hindi gumagana nang 	maayos dahil sa kakulangan ng tamang pag-aalaga. Inatasan ka ng iyong supervisor na gumawa ng isang dokumento na maglalaman ng detalyadong tagubilin kung paano alagaan at kumpunihin ang 	mga makina upang maiwasan ang ganitong problema sa hinaharap. Anong uri ng sulating teknikal ang dapat mong gamitin?</p>
+	<input type="radio" name="q31" value="a"> a. user manual<br> 		
+	<input type="radio" name="q31" value="b"> b. maintenance manual<br> 		
+	<input type="radio" name="q31" value="c"> c. troubleshooting guide<br> 	
+	<input type="radio" name="q31" value="d"> d. installation guide<br><br>
+
+
+<!-- Question 32-->
+	<p>32. Ano ang pangunahing layunin ng isang progress report?</p>
+	<input type="radio" name="q32" value="a"> a. Magbigay ng tala ng mga aksidente<br> 		
+	<input type="radio" name="q32" value="b"> b. Mag-ulat ng progreso ng proyekto<br>
+	<input type="radio" name="q32" value="c"> c. Magpahayag ng reklamo<br>			
+	<input type="radio" name="q32" value="d"> d. Magbigay ng personal na impormasyon<br><br>
+
+
+<!-- Question 33-->
+	<p>33. Alin sa mga sumusunod ang ginagamit upang magbigay ng tala ng mga natapos na aktibidad sa trabaho?</p>
+	<input type="radio" name="q33" value="a"> a. Accomplishment Report<br> 		
+	<input type="radio" name="q33" value="b"> b. Incident Report<br> 		
+	<input type="radio" name="q33" value="c"> c. Resume<br> 		
+	<input type="radio" name="q33" value="d"> d. Memo<br><br>
+
+
+<!-- Question 34-->
+	<p>34. Ikaw ay isang estudyante sa TESDA na kasalukuyang sumasailalim sa isang training program para sa automotive servicing. Araw-araw, ikaw ay gumagawa ng iba't ibang gawain tulad ng 	pag-check ng makina, pag-aayos ng mga sirang bahagi, at pag-test ng performance ng sasakyan. Bilang bahagi ng iyong training requirements, inatasan ka ng iyong instructor na magtala ng 	lahat ng iyong mga gawain at obserbasyon sa isang dokumento na magsisilbing ebidensya ng iyong progreso. Anong dokumento ang dapat mong gamitin?</p>
+	<input type="radio" name="q34" value="a"> a. training logbook<br> 	
+	<input type="radio" name="q34" value="b"> b. accomplishment report<br> 	
+	<input type="radio" name="q34" value="c"> c. memo<br> 	
+	<input type="radio" name="q34" value="d"> d. service record<br><br>
+
+
+<!-- Question 35-->
+	<p>35. Alin sa mga sumusunod ang ginagamit upang magbigay ng gabay sa paggamit ng makina o software?</p> 
+	<input type="radio" name="q35" value="a"> a. User Manual<br> 		
+	<input type="radio" name="q35" value="b"> b. Resume<br>		
+	<input type="radio" name="q35" value="c"> c. Application Letter<br> 		
+	<input type="radio" name="q35" value="d"> d. Training Logbook<br><br>
+
+
+<!-- Question 36-->
+	<p>36. Ano ang tawag sa sulating naglalaman ng detalyadong impormasyon tungkol sa isang produkto?</p> 
+	<input type="radio" name="q36" value="a"> a. Product Specification Sheet<br> 		
+	<input type="radio" name="q36" value="b"> b. Resume<br> 		
+	<input type="radio" name="q36" value="c"> c. Complaint Letter<br> 		
+	<input type="radio" name="q36" value="d"> d. Memo<br><br>
+
+
+<!-- Question 37-->
+	<p>37. Ikaw ay isang safety officer sa isang construction company na may ongoing na proyekto sa pagtatayo ng isang gusali. Isang araw, may nangyaring aksidente kung saan ang isang 	manggagawa ay nadulas habang nagdadala ng mabigat na materyales. Ang iyong manager ay humiling sa iyo na gumawa ng ulat na naglalaman ng mga detalye ng insidente, kabilang ang sanhi, 	epekto, at mga rekomendasyon upang maiwasan ang ganitong aksidente sa hinaharap. Alin sa mga sumusunod ang angkop na sulatin para dito?</p> 
+	<input type="radio" name="q37" value="a"> a. incident report<br> 	
+	<input type="radio" name="q37" value="b"> b. progress report<br> 	
+	<input type="radio" name="q37" value="c"> c. feasibility study<br> 	
+	<input type="radio" name="q37" value="d"> d. evaluation report<br><br>
+
+
+<!-- Question 38-->
+	<p>38. Ano ang tawag sa varayti ng wika batay sa grupo o antas ng lipunan?</p> 
+	<input type="radio" name="q38" value="a"> a. Sosyolek<br> 		
+	<input type="radio" name="q38" value="b"> b. Dayalek<br>		
+	<input type="radio" name="q38" value="c"> c. Idyolek<br> 		
+	<input type="radio" name="q38" value="d"> d. Rehistro<br><br>
+
+
+<!-- Question 39-->
+	<p>39. Ang “Gay Lingo” ay isang halimbawa ng:</p> 
+	<input type="radio" name="q39" value="a"> a. Dayalek<br>		
+	<input type="radio" name="q39" value="b"> b. Sosyolek<br> 		
+	<input type="radio" name="q39" value="c"> c. Etnolek<br> 		
+	<input type="radio" name="q39" value="d"> d. Idyolek<br><br>
+
+
+<!-- Question 40-->
+	<p>40. Ano ang tawag sa wika ng isang etnikong grupo?</p> 
+	<input type="radio" name="q40" value="a"> a. Sosyolek<br> 		
+	<input type="radio" name="q40" value="b"> b. Dayalek<br> 		
+	<input type="radio" name="q40" value="c"> c. Etnolek<br> 		
+	<input type="radio" name="q40" value="d"> d. Idyolek<br>
+
+
+<!-- Question 41-->
+	<p>41. Ano ang tawag sa baryasyon ng wika batay sa indibidwal na estilo ng pananalita?</p> 
+	<input type="radio" name="q41" value="a"> a. Sosyolek<br> 		
+	<input type="radio" name="q41" value="b"> b. Dayalek<br>		
+	<input type="radio" name="q41" value="c"> c. Idyolek<br> 		
+	<input type="radio" name="q41" value="d"> d. Rehistro<br><b>
+ 
+
+<!-- Question 42-->
+	<p>42. Alin sa mga sumusunod ang halimbawa ng etnolek?</p> 
+	<input type="radio" name="q42" value="a"> a. Gisa<br> 		
+	<input type="radio" name="q42" value="b"> b. Pamisa<br>	 
+	<input type="radio" name="q42" value="c"> c. Salain<br> 	
+	<input type="radio" name="q42" value="d"> d. Timplahin<br><br>
+
+ 
+<!-- Question 43-->
+	<p>43. Ano ang tawag sa wika na ginagamit ng partikular na etnolingguwistikong grupo?</p>
+	<input type="radio" name="q43" value="a"> a. Sosyolek<br>	
+	<input type="radio" name="q43" value="b"> b. Dayalek<br>	 
+	<input type="radio" name="q43" value="c"> c. Etnolek<br>	 
+	<input type="radio" name="q43" value="d"> d. Rehistro<br><br>
+
+
+<!-- Question 44-->
+	<p>44. Alin sa mga sumusunod ang nasa anyong imperatibo?</p> 
+	<input type="radio" name="q44" value="a"> a. “Maaring isabay ang laing at suam.”<br> 		
+	<input type="radio" name="q44" value="b"> b. “Igisa ang bawang at sibuyas.”<br> 
+	<input type="radio" name="q44" value="c"> c. “Kung nais, samahan ng wansoy.”<br> 		
+	<input type="radio" name="q44" value="d"> d. “Tandaang saglit lamang ang pagluluto ng gulay.”<br><br>
+
+
+<!-- Question 45-->
+	<p>45. Ano ang tawag sa proseso ng pagdaragdag ng panlapi sa isang salita?</p>
+	<input type="radio" name="q45" value="a"> a. Panghihiram<br>		
+	<input type="radio" name="q45" value="b"> b. Afiksasyon<br>		
+	<input type="radio" name="q45" value="c"> c. Pagpapaikli<br> 		
+	<input type="radio" name="q45" value="d"> d. Code switching<br><br>
+
+
+<!-- Question 46-->
+	<p>46. Alin sa mga sumusunod ang halimbawa ng modernong termino sa pagluluto?</p> 
+	<input type="radio" name="q46" value="a"> a. Gata<br> 		
+	<input type="radio" name="q46" value="b"> b. Patis<br> 	 	
+	<input type="radio" name="q46" value="c"> c. Coconut milk<br>   	
+	<input type="radio" name="q46" value="d"> d. Niyog<br><br>
+
+
+<!-- Question 47-->
+	<p>47. Ano ang layunin ng pormal na wika sa cookbook?</p> 
+	<input type="radio" name="q47" value="a"> a. Para gawing masaya ang recipe<br> 		
+	<input type="radio" name="q47" value="b"> b. Para gawing teknikal at eksakto ang panuto<br> 
+	<input type="radio" name="q47" value="c"> c. Para gawing simple ang pagluluto<br> 		
+	<input type="radio" name="q47" value="d"> d. Para gawing mas mabilis ang proseso<br><br>
+
+
+<!-- Question 48-->
+	<p>48. Alin sa mga sumusunod ang halimbawa ng impormal na wika sa cookbook?</p>
+	<input type="radio" name="q48" value="a"> a. “Igisa ang bawang hanggang mag-kulay tsokolate.”<br> 	
+	<input type="radio" name="q48" value="b"> b. “Igisa ang bawang hanggang sa maging translucent.”<br> 
+	<input type="radio" name="q48" value="c"> c. “Pakuluin ang tubig hanggang umusok.”<br> 		
+	<input type="radio" name="q48" value="d"> d. “Budburan ng asin ang karne.”<br><br>
+
+
+<!-- Question 49--> 
+	<p>49. Ano ang ipinapakita ng rehistro ng wika sa pagluluto?</p> 
+	<input type="radio" name="q49" value="a">  a. Ang yaman ng kultura sa pagkain<br> 		
+	<input type="radio" name="q49" value="b">  b. Ang dami ng sangkap sa recipe<br> 
+	<input type="radio" name="q49" value="c">  c. Ang bilis ng pagluluto<br> 			
+	<input type="radio" name="q49" value="d">  d. Ang dami ng hakbang sa pagluluto<br><br>
+
+
+<!-- Question 50-->  
+	<p>50. Alin sa mga sumusunod ang hindi halimbawa ng rehistro ng wika?</p> 
+	<input type="radio" name="q50" value="a">  a. Gisa<br>		
+	<input type="radio" name="q50" value="b">  b. Pakuluin<br>		
+	<input type="radio" name="q50" value="c">  c. Timplahan<br> 		
+	<input type="radio" name="q50" value="d">  d. Maglakad<br><br>
+
+
+	<button type="submit">Submit</button>
+   </form>
+
+  <script>
+    // Firebase Config 
+    const firebaseConfig = {
+      apiKey: "YOUR-API-KEY",
+      authDomain: "ExamSystem",
+      databaseURL: "https://examsystem-8d049-default-rtdb.asia-southeast1.firebasedatabase.app/",
+      projectId: "YOUR-PROJECT",
+      storageBucket: "YOUR-PROJECT.appspot.com",
+      messagingSenderId: "SENDER-ID",
+      appId: "APP-ID"
+    };
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.database();
+
+    // Answer Key (from my docx)
+    const answerKey = {
+      q1: "b", q2: "b", q3: "b", q4: "c", q5: "b", q6: "b", q7: "c", q8: "b", q9: "b", q10: "b",
+      q11: "b", q12: "c", q13: "b", q14: "a", q15: "b", q16: "b", q17: "b", q18: "a", q19: "b", q20: "a",
+      q21: "a", q22: "a", q23: "a", q24: "a", q25: "a", q26: "a", q27: "b", q28: "c", q29: "a", q30: "b",
+      q31: "b", q32: "b", q33: "a", q34: "a", q35: "a", q36: "a", q37: "a", q38: "a", q39: "b", q40: "c",
+      q41: "c", q42: "b", q43: "c", q44: "b", q45: "b", q46: "c", q47: "b", q48: "a", q49: "a", q50: "d"
+    };
+
+    document.getElementById("examForm").addEventListener("submit", function(e){
+      e.preventDefault();
+      const name = document.getElementById("studentName").value;
+
+      let correct = 0;
+      let wrong = 0;
+
+      for (let q in answerKey) {
+        const selected = document.querySelector(`input[name="${q}"]:checked`);
+        if (selected) {
+          if (selected.value === answerKey[q]) {
+            correct++;
+          } else {
+            wrong++;
+          }
+        } else {
+          wrong++; // no answer = wrong
+        }
+      }
+
+      const score = correct;
+
+      // Save result to Firebase
+      db.ref("exam_results/" + name).set({
+        correct: correct,
+        wrong: wrong,
+        score: score
+      });
+
+      alert("Submitted! Correct: " + correct + " | Wrong: " + wrong + " | Score: " + score);
+    });
+  </script>
+</body>
+</html>
